@@ -44,9 +44,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_ACTION }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: use nodejs
         uses: actions/setup-node@v4
         with:
